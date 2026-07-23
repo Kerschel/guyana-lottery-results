@@ -2,17 +2,21 @@
   "name": "guyana-lottery-results",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": ">=20"
+  },
   "description": "Guyana lottery results website — mobile-first, SEO-optimized",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "serve out -l $PORT",
     "lint": "next lint"
   },
   "dependencies": {
     "next": "^14.2.0",
     "react": "^18.3.0",
-    "react-dom": "^18.3.0"
+    "react-dom": "^18.3.0",
+    "serve": "^14.2.0"
   },
   "devDependencies": {
     "@types/node": "^20.12.0",
